@@ -25,19 +25,19 @@ export function getLevelRewardRate(level: UserLevel): number {
     case "将軍":
       return 0.02
     case "大名":
-      return 0.015
+      return 0.03
     case "大老":
-      return 0.0125
+      return 0.04
     case "老中":
-      return 0.01
+      return 0.05
     case "奉行":
-      return 0.0075
+      return 0.06
     case "代官":
-      return 0.005
+      return 0.1
     case "武将":
-      return 0.0025
+      return 0.25
     case "足軽":
-      return 0.001
+      return 0.45
     default:
       return 0
   }

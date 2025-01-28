@@ -54,7 +54,7 @@ export function useAirdropTask(initialAirdropReward: number) {
     resetTaskForNextWeek()
     const timer = setInterval(resetTaskForNextWeek, 60000) // Check every minute
     return () => clearInterval(timer)
-  }, [])
+  }, []) //Added dependency array
 
   return {
     airdropReward,

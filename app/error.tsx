@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
-import { Button } from "@/components/ui/button"
+// import { Button } from "@/components/ui/button"  // 一時的にコメントアウト
 
 export default function Error({
   error,
@@ -19,11 +19,13 @@ export default function Error({
       <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
         <h1 className="text-2xl font-bold mb-4 text-red-600">エラーが発生しました</h1>
         <p className="mb-4 text-gray-700">申し訳ありませんが、問題が発生しました。</p>
-        <Button onClick={() => reset()} className="w-full">
+        <button
+          onClick={() => reset()}
+          className="w-full px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+        >
           再試行
-        </Button>
+        </button>
       </div>
     </div>
   )
 }
-
